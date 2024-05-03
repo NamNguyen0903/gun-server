@@ -10,7 +10,7 @@ const server = http.createServer((req, res) => {
 // Đảm bảo cập nhật địa chỉ IP và cổng cho các máy chủ khác trong mạng của bạn
 const gun = Gun({
     web: server,
-    peers: ['http://192.168.1.10:8080/gun', 'http://192.168.1.12:8080/gun']
+    peers: ['https://dcc3-2402-800-63f2-d427-b979-b645-ad28-9b92.ngrok-free.app/gun', 'http://192.168.1.12:8080/gun']
 });
 
 server.listen(8081, () => {
